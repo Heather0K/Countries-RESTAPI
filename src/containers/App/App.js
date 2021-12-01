@@ -14,7 +14,7 @@ const Routes = () => {
                 <Route path="/home" exact>
                     <Home/>
                 </Route>
-                <Route path="/country/:id">
+                <Route path="/country/:code">
                     <View/>
                 </Route>
             </Switch>
@@ -26,3 +26,4 @@ export const App = () => (
         <Routes />
     </Router>
 );
+

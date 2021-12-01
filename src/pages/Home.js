@@ -1,5 +1,8 @@
+import { ReigonPicker } from "../components/ReigonPicker/ReigonPicker";
+
 export const Home = () => {
     return (
-    <p>This is the homepage</p>
+   <ReigonPicker/>
+
     )
 }
