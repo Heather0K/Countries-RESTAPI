@@ -1,31 +1,8 @@
 import React, {useState} from "react";
 import {useHistory} from "react-router-dom";
-import {ReigonItem, ReigonContainer} from './ReigonPicker.style'
+import {ReigonItem, ReigonContainer, CountryItem, CountryContainer} from './ReigonPicker.style'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faGlobeAfrica, faGlobeAmericas, faGlobeEurope} from '@fortawesome/free-solid-svg-icons'
-
-const REGIONS = [
-    {
-        icon: faGlobeAfrica,
-        title: 'Africa',
-    },
-    {
-        icon: faGlobeAmericas,
-        title: 'Americas',
-    },
-    {
-        icon: faGlobeEurope,
-        title: 'Asia',
-    },
-    {
-        icon: faGlobeEurope,
-        title: 'Europe',
-    },
-    {
-        icon: faGlobeEurope,
-        title: 'Oceania',
-    },
-]
+import {REGIONS} from "../../assets/reigons";
 
 const ReigonPicker = () => {
     const history = useHistory();
@@ -68,18 +45,19 @@ const ReigonPicker = () => {
             </ReigonContainer>
 
             {countries.length > 0 &&
-                <ReigonContainer>
+                <CountryContainer>
                     {countries.map((item) => {
                         return (
-                            <ReigonItem
+                            <CountryItem
                                 onClick={() => redirect(item.cca2)}
                                 key={item.cca2}
                             >
-                                <p>{item.flag}{item.name.common}</p>
-                            </ReigonItem>
+                                <div>{item.flag}</div>
+                                <p>{item.name.common}</p>
+                            </CountryItem>
                         );
                     })}
-                </ReigonContainer>
+                </CountryContainer>
             }
         </>
     );
