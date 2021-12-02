@@ -1,8 +1,8 @@
 import './App.css';
 import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 
-import { Home } from '../../pages/Home';
-import { View } from '../../pages/View';
+import { Home } from '../../pages/Home/Home';
+import { View } from '../../pages/View/View';
 
 
 const Routes = () => {

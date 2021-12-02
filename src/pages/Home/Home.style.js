@@ -1,16 +1,7 @@
 import styled from 'styled-components';
 
-export const ReigonContainer = styled.div `
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-  flex-wrap: wrap;
-  
-`;
-
 export const ReigonItem = styled.button `
-  color: #42542e;
+  color: #06A77D;
   background-color: #FFFFFF;
   border-radius: 12px;
   border: 1px solid #dee2e6;
@@ -22,7 +13,8 @@ export const ReigonItem = styled.button `
   box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
 
   p {
-    font-size: 30px;
+    font-size: 25px;
+    color: #323232;
   }
 
   :hover {
@@ -31,8 +23,12 @@ export const ReigonItem = styled.button `
   }
 
   ${({selected}) => selected && `
-    border: 3px solid #000000;
+    border: 3px solid #06A77D;
   `}
   `;
+
+
+
+
 
 
