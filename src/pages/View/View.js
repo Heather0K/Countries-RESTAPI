@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {useParams, useHistory} from "react-router-dom";
 import {CountryInfo} from "../../Components/CountryInfo/CountryInfo";
 import {PageContainer} from "../../containers/Containers.style";
-import {Button} from "../common.style";
+import {Button} from "../../Components/Button/Button";
 
 export const View = () => {
     const history = useHistory();

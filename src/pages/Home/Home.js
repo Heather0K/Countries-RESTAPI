@@ -1,8 +1,8 @@
 import {useState} from "react";
 import {CountryResults} from "../../Components/CountryResults/CountryResults";
-import {PageContainer, ReigonContainer} from "../../containers/Containers.style";
+import {CountryContainer, PageContainer, ReigonContainer} from "../../containers/Containers.style";
 import {ReigonItem} from './Home.style'
-import {Button} from "../common.style";
+import {Button} from "../../Components/Button/Button";
 import {REGIONS} from "../../assets/reigons";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
@@ -43,11 +43,12 @@ export const Home = () => {
                 {REGIONS.map((item) => {
                     return (
                         <ReigonItem
+                            aria-label={item.title}
                             onClick={() => getCountries(item.title)}
                             key={item.title}
                             selected={selected === item.title}
                         >
-                            <FontAwesomeIcon icon={item.icon}/>
+                            <FontAwesomeIcon icon={item.icon} alt="Globe Icon"/>
                             <p>{item.title}</p>
 
                         </ReigonItem>
@@ -55,7 +56,13 @@ export const Home = () => {
                 })}
             </ReigonContainer>
             {countries.length > 0 &&
-                <CountryResults countries={countries}/>
+                <CountryContainer>
+                    {countries.map((item) => {
+                        return (
+                            <CountryResults  key={item.cca2} item={item}/>
+                        );
+                    })}
+                </CountryContainer>
             };
         </PageContainer>
     );

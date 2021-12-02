@@ -6,7 +6,7 @@ export const CountryInfo = ({flag, names, native, jpnName}) => {
         <InfoContainer>
             <InfoCard>
                 <CardTitle>
-                    <Flag>
+                    <Flag alt='country flag emoji'>
                         {flag}
                     </Flag>
                     <h1> {names.common} </h1>

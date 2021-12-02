@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ReigonItem = styled.button `
+export const RegionItem = styled.button `
   color: #06A77D;
   background-color: #FFFFFF;
   border-radius: 12px;
