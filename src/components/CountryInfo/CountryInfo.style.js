@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InfoCard = styled.div `
+export const InfoCard = styled.div`
   background-color: #FFFFFF;
   border-radius: 12px;
   border: 1px solid #dee2e6;
@@ -9,36 +9,46 @@ export const InfoCard = styled.div `
   box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
 `;
 
-export const CardTitle = styled.div `
+export const CardTitle = styled.div`
   display: flex;
   flex-wrap: wrap-reverse;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  `;
+`;
 
-export const Flag = styled.p `
- font-size: 90px;
-  margin: 0;
-  `;
+export const Emoji = styled.p`
+  font-size: 50px;
+  margin: 5px;
+`;
 
-export const Names = styled.div `
+export const Flag = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+
+  img {
+    max-width: 200px;
+  }
+`;
+
+export const InfoItem = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  
-  h6, p {
+
+   p, b {
     flex-direction: column;
     display: flex;
     flex-wrap: wrap;
     padding: 0 20px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     flex-direction: column;
-    h6, p {
+    p, b {
      padding: 0;
       margin: 15px;
     }
