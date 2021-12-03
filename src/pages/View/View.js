@@ -59,7 +59,7 @@ export const View = () => {
                 Back
             </Button>
             {countryData &&
-                <CountryInfo countryData={countryData} native={native}/>
+                <CountryInfo role="main" countryData={countryData} native={native}/>
             }
         </PageContainer>
     );

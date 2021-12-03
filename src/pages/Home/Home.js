@@ -24,7 +24,7 @@ export const Home = () => {
     };
 
     return (
-        <PageContainer role="main">
+        <PageContainer>
             <h1>Welcome to Country Finder 👋 </h1>
             <h2>Pick a region below to begin</h2>
 
@@ -39,7 +39,7 @@ export const Home = () => {
                 </Button>
             }
 
-            <ReigonContainer>
+            <ReigonContainer role="main">
                 {REGIONS.map((item) => {
                     return (
                         <RegionItem
