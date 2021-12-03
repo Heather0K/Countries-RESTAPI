@@ -17,6 +17,20 @@ Users should be able to:
 
 
 ### Screenshot
+Main Page 
+![public/screenshots/main.png](public/screenshots/main.png)
+
+Clicked region
+![public/screenshots/main.png](public/screenshots/clickedReigon.png)
+
+Country info
+![public/screenshots/main.png](public/screenshots/CountryInfo.png)
+
+And on mobile
+![public/screenshots/main.png](public/screenshots/CountryInfo-mobile.png)
+
+
+
 
 ### Built with
 
@@ -36,7 +50,8 @@ Improvements I would like to make to the ui,
 - Move the API calls to an API folder and handle it outwith
 - Sorting and filtering countries 
 - Put NativeName in CountryData Object
-
+- Search functionality 
+- improve responsiveness 
 
 
 # Getting Started 
